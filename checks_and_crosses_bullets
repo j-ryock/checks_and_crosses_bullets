@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .checklist, .crosslist {
+  list-style-type: none;
+  padding-left: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12pt;
+}
+  
+.checklist li::before, .crosslist li::before {
+  margin-right: 3px;
+  font-size: 16pt;
+}
+
+.checklist li::before {
+  content: '✓';
+  color: green;
+  font-weight: bold; /* bold = 700 | max. is 900 */
+}
+.crosslist li::before {
+  content: '✖';
+  color: red;
+  font-weight: normal; /* bold = 700 | max. is 900 */
+}
+    </style>
+</head>
+<body>
+    <ul class="checklist">
+        <li>This is the first item. It has two sentences.</li>
+        <li>This is the second item. It also has two sentences.</li>
+        <li>This is the third item. Two sentences here too.</li>
+        <li>This is the fourth item. Again, two sentences.</li>
+        <li>This is the fifth item. Two sentences as well.</li>
+      </ul>
+      
+      <ul class="crosslist">
+        <li>This is the first item in the second list. It has three sentences. Each item has crosses.</li>
+        <li>This is the second item in the second list. It also has three sentences. This shows crosses as bullets.</li>
+        <li>This is the third item. Three sentences are present here. Crosses are used as list item markers.</li>
+        <li>This is the fourth item. Notice the three . Crosses appear before each item.</li>
+        <li>This is the fifth item. Each item has three sentences. Crosses are visible before the end.
+      </ul>
+</body>
+</html>
